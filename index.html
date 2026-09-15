@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en" class="dark" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tamizhmaran S | Generative AI Engineer</title>
+    <meta name="description" content="Portfolio of Tamizhmaran S, Generative AI Engineer specializing in NLP, Large Language Models (LLMs), RAG, and LangChain." />
+    <script>
+      // Default to dark theme; only switch to light if user explicitly chose it
+      (function() {
+        var saved = localStorage.getItem('theme');
+        if (saved === 'light') {
+          document.documentElement.classList.remove('dark');
+        } else {
+          document.documentElement.classList.add('dark');
+          localStorage.setItem('theme', 'dark');
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
